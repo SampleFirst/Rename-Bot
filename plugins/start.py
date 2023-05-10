@@ -30,11 +30,11 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "")
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-    wish = "❤️ Good morning sweetheart ❤️"
+    wish = "❤️ 𝗚𝗼𝗼𝗱 𝗠𝗼𝗿𝗻𝗶𝗻𝗴 𝗦𝘄𝗲𝗲𝘁𝗵𝗲𝗮𝗿𝘁"
 elif 12 <= currentTime.hour < 12:
-    wish = '🤍 Good afternoon my Love 🤍'
+    wish = '🤍 𝗚𝗼𝗼𝗱 𝗔𝗳𝘁𝗲𝗿𝗻𝗼𝗼𝗻 𝗠𝘆 𝗟𝗼𝘃𝗲 🤍'
 else:
-    wish = '🦋 Good evening baby 🦋'
+    wish = '💙 𝗚𝗼𝗼𝗱 𝗘𝘃𝗲𝗻𝗶𝗻𝗴 𝗕𝗮𝗯𝘆 💙'
 
 # -------------------------------
 
@@ -45,16 +45,15 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Hello {wish} {message.from_user.first_name } \n\n
-	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
+        txt=f"""𝗛𝗲𝗹𝗹𝗼 {wish} {message.from_user.first_name } \n\n𝗜 𝗮𝗺 𝗳𝗶𝗹𝗲 𝗿𝗲𝗻𝗮𝗺𝗲𝗿 𝗯𝗼𝘁, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘀𝗲𝗻𝘁 𝗮𝗻𝘆 𝘁𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁 𝗢𝗿 𝗩𝗶𝗱𝗲𝗼 𝗮𝗻𝗱 𝗲𝗻𝘁𝗲𝗿 𝗻𝗲𝘄 𝗳𝗶𝗹𝗲𝗻𝗮𝗺𝗲 𝘁𝗼 𝗿𝗲𝗻𝗮𝗺𝗲 𝗶𝘁"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                      [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                      [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                      InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                      [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
+                                      [[InlineKeyboardButton("🤖 𝗝𝗢𝗜𝗡 𝗠𝗢𝗥𝗘 𝗕𝗢𝗧𝗦 🤖", url="https://t.me/iPepkornBots")],
+                                      [InlineKeyboardButton("🛍 𝗕𝗘𝗦𝗧 𝗦𝗛𝗢𝗣𝗣𝗜𝗡𝗚 𝗗𝗘𝗔𝗟𝗦 🛍", url="https://youtube.com/@LazyDeveloperr")],
+                                      [InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘𝗦", url='https://t.me/LazyPrincessSupport'),
+                                      InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url='https://t.me/iPopkonBot')],
+                                      [InlineKeyboardButton("🔥 𝗝𝗢𝗜𝗡 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔥", url="https://youtube.com/@LazyDeveloperr")]
                                       ]))
         return
     if id:
@@ -64,12 +63,12 @@ async def start(client, message):
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
                                          reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                              [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                              [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                             InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                             [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
-                                          ]))
+                                      [[InlineKeyboardButton("🤖 𝗝𝗢𝗜𝗡 𝗠𝗢𝗥𝗘 𝗕𝗢𝗧𝗦 🤖", url="https://t.me/iPepkornBots")],
+                                      [InlineKeyboardButton("🛍 𝗕𝗘𝗦𝗧 𝗦𝗛𝗢𝗣𝗣𝗜𝗡𝗚 𝗗𝗘𝗔𝗟𝗦 🛍", url="https://youtube.com/@LazyDeveloperr")],
+                                      [InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘𝗦", url='https://t.me/LazyPrincessSupport'),
+                                      InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url='https://t.me/iPopkonBot')],
+                                      [InlineKeyboardButton("🔥 𝗝𝗢𝗜𝗡 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔥", url="https://youtube.com/@LazyDeveloperr")]
+                                      ]))
             except:
                 return
         else:
@@ -79,17 +78,14 @@ async def start(client, message):
             new_limit = limit + 104857600
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
-	Hello {wish} {message.from_user.first_name }\n\n
-	__I am file renamer bot, Please send any telegram 
-	**Document Or Video** and enter new filename to rename it__
-	""", reply_to_message_id=message.id,
+	𝗛𝗲𝗹𝗹𝗼 {wish} {message.from_user.first_name } \n\n𝗜 𝗮𝗺 𝗳𝗶𝗹𝗲 𝗿𝗲𝗻𝗮𝗺𝗲𝗿 𝗯𝗼𝘁, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘀𝗲𝗻𝘁 𝗮𝗻𝘆 𝘁𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁 𝗢𝗿 𝗩𝗶𝗱𝗲𝗼 𝗮𝗻𝗱 𝗲𝗻𝘁𝗲𝗿 𝗻𝗲𝘄 𝗳𝗶𝗹𝗲𝗻𝗮𝗺𝗲 𝘁𝗼 𝗿𝗲𝗻𝗮𝗺𝗲 𝗶𝘁""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                          [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                          [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                          InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                          [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
-                                          ]))
+                                      [[InlineKeyboardButton("🤖 𝗝𝗢𝗜𝗡 𝗠𝗢𝗥𝗘 𝗕𝗢𝗧𝗦 🤖", url="https://t.me/iPepkornBots")],
+                                      [InlineKeyboardButton("🛍 𝗕𝗘𝗦𝗧 𝗦𝗛𝗢𝗣𝗣𝗜𝗡𝗚 𝗗𝗘𝗔𝗟𝗦 🛍", url="https://youtube.com/@LazyDeveloperr")],
+                                      [InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘𝗦", url='https://t.me/LazyPrincessSupport'),
+                                      InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url='https://t.me/iPopkonBot')],
+                                      [InlineKeyboardButton("🔥 𝗝𝗢𝗜𝗡 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔥", url="https://youtube.com/@LazyDeveloperr")]
+                                      ]))
     
 
 
@@ -125,13 +121,13 @@ async def send_doc(client, message):
         user_type = user_deta["usertype"]
     except:
         await message.reply_text(text=f"Hello dear {message.from_user.first_name}  **we are currently working on this issue**\n\nPlease try to rename files from your another account.\nBecause this BOT can't rename file sent by some ids.\n\nIf you are an **ADMIN** Don't worry ! here we have a solution for you dear {message.from_user.first_name }.\n\nPlease use \n👉 `/addpremium your_other_userid` 👈 to use premium feautres\n\n",
-                                  reply_markup=InlineKeyboardMarkup([
-                                                                     [InlineKeyboardButton("🦋 Contact LazyDeveloper 🦋", url='https://telegram.me/LazyDeveloper')],
-                                                                     [InlineKeyboardButton("🔺 Watch Tutorial 🔺", url='https://youtube.com/@LazyDeveloperr')],
-                                                                     [InlineKeyboardButton("🦋 Visit Channel  ", url='https://t.me/LazyDeveloper'),
-                                                                     InlineKeyboardButton("  Support Group 🦋", url='https://t.me/LazyPrincessSupport')],
-                                                                     [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
-                                                                    ]))
+reply_markup=InlineKeyboardMarkup(
+                                      [[InlineKeyboardButton("🤖 𝗝𝗢𝗜𝗡 𝗠𝗢𝗥𝗘 𝗕𝗢𝗧𝗦 🤖", url="https://t.me/iPepkornBots")],
+                                      [InlineKeyboardButton("🛍 𝗕𝗘𝗦𝗧 𝗦𝗛𝗢𝗣𝗣𝗜𝗡𝗚 𝗗𝗘𝗔𝗟𝗦 🛍", url="https://youtube.com/@LazyDeveloperr")],
+                                      [InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘𝗦", url='https://t.me/LazyPrincessSupport'),
+                                      InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url='https://t.me/iPopkonBot')],
+                                      [InlineKeyboardButton("🔥 𝗝𝗢𝗜𝗡 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔥", url="https://youtube.com/@LazyDeveloperr")]
+                                      ]))
         await message.reply_text(text=f"🦋")
         return 
 
