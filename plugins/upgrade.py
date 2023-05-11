@@ -18,7 +18,7 @@ async def upgrade(bot,update):
 	
 	**💎 Diamond 💎**
 	Daily Upload limit 100GB
-	Price Rs 206  ind /🌎 2.5$  per Month
+	Price Rs 206  ind /🌎 2.5$  per Month"""
 	
 	
 	keybord = InlineKeyboardMarkup([[ 
@@ -43,8 +43,8 @@ async def upgradecm(bot,message):
 	
 	**💎 Diamond 💎**
 	Daily Upload limit 100GB
-	Price Rs 206  ind /🌎 2.5$  per Month
-	"""
+	Price Rs 206  ind /🌎 2.5$  per Month"""
+	
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/MinutesOnline")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]]])
 	await update.message.edit(text = text,reply_markup = keybord)
