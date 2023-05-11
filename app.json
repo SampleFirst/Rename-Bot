@@ -37,7 +37,7 @@
 
             "description": "Pyrogram String Session Use  @genStr_Bot",
 
-            "required": true
+            "required": false
 
         },
 
