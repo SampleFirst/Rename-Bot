@@ -24,7 +24,7 @@ async def upgrade(bot,update):
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/MinutesOnline")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
-	ext = text,reply_markup = keybord)
+	
 	
 
 @Client.on_message(filters.private & filters.command(["upgrade"]))
