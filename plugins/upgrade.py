@@ -47,5 +47,4 @@ async def upgradecm(bot,message):
 	
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/MinutesOnline")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
-	await update.message.edit(text = text,reply_markup = keybord)
-	
+	await message.reply_text(text = text,reply_markup = keybord)
