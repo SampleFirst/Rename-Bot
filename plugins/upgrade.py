@@ -22,7 +22,7 @@ async def upgrade(bot,update):
 	
 	
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/MinutesOnline")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]]])
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/MinutesOnline")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	ext = text,reply_markup = keybord)
 	
@@ -46,6 +46,6 @@ async def upgradecm(bot,message):
 	Price Rs 206  ind /🌎 2.5$  per Month"""
 	
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/MinutesOnline")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]]])
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/MinutesOnline")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
