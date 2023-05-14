@@ -31,6 +31,12 @@ if STRING:
     apps = [Client2,bot]
     for app in apps:
         app.start()
+
+    # Export the session string for the bot
+    session_string = bot.export_session_string()
+    print(session_string)
+
+    # Keep the bot running
     idle()
     for app in apps:
         app.stop()
