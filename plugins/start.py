@@ -48,13 +48,11 @@ async def start(client, message):
         txt=f"""𝗛𝗲𝗹𝗹𝗼 {wish} {message.from_user.first_name } \n\n𝗜 𝗮𝗺 𝗳𝗶𝗹𝗲 𝗿𝗲𝗻𝗮𝗺𝗲𝗿 𝗯𝗼𝘁, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘀𝗲𝗻𝘁 𝗮𝗻𝘆 𝘁𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁 𝗢𝗿 𝗩𝗶𝗱𝗲𝗼 𝗮𝗻𝗱 𝗲𝗻𝘁𝗲𝗿 𝗻𝗲𝘄 𝗳𝗶𝗹𝗲𝗻𝗮𝗺𝗲 𝘁𝗼 𝗿𝗲𝗻𝗮𝗺𝗲 𝗶𝘁"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
-                                reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🤖 𝗝𝗢𝗜𝗡 𝗠𝗢𝗥𝗘 𝗕𝗢𝗧𝗦 🤖", url="https://t.me/iPepkornBots")],
-                                      [InlineKeyboardButton("🛍 𝗕𝗘𝗦𝗧 𝗦𝗛𝗢𝗣𝗣𝗜𝗡𝗚 𝗗𝗘𝗔𝗟𝗦 🛍", url="https://t.me/TrueDealsMaster")],
-                                      [InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘𝗦", url='https://t.me/iPopkonBot'),
-                                      InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url='https://t.me/iPapkornUpdate')],
-                                      [InlineKeyboardButton("🔥 𝗝𝗢𝗜𝗡 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔥", url="https://youtube.com/@InvisibleYTV")]
-                                      ]))
+                                reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
+        InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')
+        ]] )
+        )
         return
     if id:
         if old == True:
@@ -62,13 +60,11 @@ async def start(client, message):
                 await client.send_message(id, "Your Friend is Already Using Our Bot")
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
-                                         reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🤖 𝗝𝗢𝗜𝗡 𝗠𝗢𝗥𝗘 𝗕𝗢𝗧𝗦 🤖", url="https://t.me/iPepkornBots")],
-                                      [InlineKeyboardButton("🛍 𝗕𝗘𝗦𝗧 𝗦𝗛𝗢𝗣𝗣𝗜𝗡𝗚 𝗗𝗘𝗔𝗟𝗦 🛍", url="https://t.me/TrueDealsMaster")],
-                                      [InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘𝗦", url='https://t.me/iPopkonBot'),
-                                      InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url='https://t.me/iPapkornUpdate')],
-                                      [InlineKeyboardButton("🔥 𝗝𝗢𝗜𝗡 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔥", url="https://youtube.com/@InvisibleYTV")]
-                                      ]))
+                                         reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
+        InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')
+        ]] )
+        )
             except:
                 return
         else:
@@ -79,13 +75,11 @@ async def start(client, message):
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
 	𝗛𝗲𝗹𝗹𝗼 {wish} {message.from_user.first_name } \n\n𝗜 𝗮𝗺 𝗳𝗶𝗹𝗲 𝗿𝗲𝗻𝗮𝗺𝗲𝗿 𝗯𝗼𝘁, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘀𝗲𝗻𝘁 𝗮𝗻𝘆 𝘁𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁 𝗢𝗿 𝗩𝗶𝗱𝗲𝗼 𝗮𝗻𝗱 𝗲𝗻𝘁𝗲𝗿 𝗻𝗲𝘄 𝗳𝗶𝗹𝗲𝗻𝗮𝗺𝗲 𝘁𝗼 𝗿𝗲𝗻𝗮𝗺𝗲 𝗶𝘁""", reply_to_message_id=message.id,
-                                     reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🤖 𝗝𝗢𝗜𝗡 𝗠𝗢𝗥𝗘 𝗕𝗢𝗧𝗦 🤖", url="https://t.me/iPepkornBots")],
-                                      [InlineKeyboardButton("🛍 𝗕𝗘𝗦𝗧 𝗦𝗛𝗢𝗣𝗣𝗜𝗡𝗚 𝗗𝗘𝗔𝗟𝗦 🛍", url="https://t.me/TrueDealsMaster")],
-                                      [InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘𝗦", url='https://t.me/iPopkonBot'),
-                                      InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url='https://t.me/iPapkornUpdate')],
-                                      [InlineKeyboardButton("🔥 𝗝𝗢𝗜𝗡 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔥", url="https://youtube.com/@InvisibleYTV")]
-                                      ]))
+                                     reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
+        InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')
+        ]] )
+        )
     
 
 
@@ -121,13 +115,11 @@ async def send_doc(client, message):
         user_type = user_deta["usertype"]
     except:
         await message.reply_text(text=f"Hello dear {message.from_user.first_name}  **we are currently working on this issue**\n\nPlease try to rename files from your another account.\nBecause this BOT can't rename file sent by some ids.\n\nIf you are an **ADMIN** Don't worry ! here we have a solution for you dear {message.from_user.first_name }.\n\nPlease use \n👉 `/addpremium your_other_userid` 👈 to use premium feautres\n\n",
-reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🤖 𝗝𝗢𝗜𝗡 𝗠𝗢𝗥𝗘 𝗕𝗢𝗧𝗦 🤖", url="https://t.me/iPepkornBots")],
-                                      [InlineKeyboardButton("🛍 𝗕𝗘𝗦𝗧 𝗦𝗛𝗢𝗣𝗣𝗜𝗡𝗚 𝗗𝗘𝗔𝗟𝗦 🛍", url="https://t.me/TrueDealsMaster")],
-                                      [InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘𝗦", url='https://t.me/iPopkonBot'),
-                                      InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url='https://t.me/iPapkornUpdate')],
-                                      [InlineKeyboardButton("🔥 𝗝𝗢𝗜𝗡 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔥", url="https://youtube.com/@InvisibleYTV")]
-                                      ]))
+reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
+        InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')
+        ]] )
+        )
         await message.reply_text(text=f"🦋")
         return 
 
