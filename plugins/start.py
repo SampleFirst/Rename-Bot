@@ -15,15 +15,15 @@ from helper.database import daily as daily_
 from helper.date import check_expi
 import os
 
-CHANNEL = os.environ.get('CHANNEL', "")
-STRING = os.environ.get("STRING", "")
+CHANNEL = os.environ.get('CHANNEL', "TrueDealsMaster")
+STRING = os.environ.get("STRING", "BQFsxvYAcnMtxv-d_Xf4vONOIUj42RpvK02wRKDS9zWq4qz17tm1vcNra14hzF9lsUFw8SB78pgXGKNQaAMppm5r26-uCZB2RwNCJAygGYdgWRBOlJT1sb2bhgYTtVtZCorgOsGbR5Vzcgh5PgsulbPXFK5oja2dAzRt4lIra3KMm2OTxZE9jZMe8G4N9T41LNiE3eNycaWAeop1ke2SuXBYxQ-4UrZJYYCV6tgNKK6aqelYbERnASbOLGU9QBRx6A25x2TjXXj7gFVF75QPig62CBoVXBkcjtX0I5d8WUVZyrrLuiRKw70RQaS1IMhw59TI8vfEYzlJuwYmAQ2TIqdM51JS1wAAAAFhY794AQ")
 ADMIN = int(os.environ.get("ADMIN", 5217294686))
 bot_username = os.environ.get("BOT_USERNAME","PremiumRenameBot")
-log_channel = int(os.environ.get("LOG_CHANNEL", ""))
-token = os.environ.get('TOKEN', '')
+log_channel = int(os.environ.get("LOG_CHANNEL", "-1001898316484"))
+token = os.environ.get('TOKEN', '5928894328:AAEJyrBTn0rYer7aP4JxIBlxfLcopTA9fC8')
 botid = token.split(':')[0]
 FLOOD = 500
-LAZY_PIC = os.environ.get("LAZY_PIC", "")
+LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/4488a1891072c63fed940.jpg")
 
 
 # Part of Day --------------------
