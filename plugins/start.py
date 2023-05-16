@@ -17,7 +17,7 @@ from helper.date import check_expi
 import os
 
 CHANNEL = os.environ.get('CHANNEL', "TrueDealsMaster")
-STRING = os.environ.get("STRING", "BQFsxvYAcnMtxv-d_Xf4vONOIUj42RpvK02wRKDS9zWq4qz17tm1vcNra14hzF9lsUFw8SB78pgXGKNQaAMppm5r26-uCZB2RwNCJAygGYdgWRBOlJT1sb2bhgYTtVtZCorgOsGbR5Vzcgh5PgsulbPXFK5oja2dAzRt4lIra3KMm2OTxZE9jZMe8G4N9T41LNiE3eNycaWAeop1ke2SuXBYxQ-4UrZJYYCV6tgNKK6aqelYbERnASbOLGU9QBRx6A25x2TjXXj7gFVF75QPig62CBoVXBkcjtX0I5d8WUVZyrrLuiRKw70RQaS1IMhw59TI8vfEYzlJuwYmAQ2TIqdM51JS1wAAAAFhY794AQ")
+STRING = os.environ.get("STRING", "BQFsxvYAn0pCNhN1DtMfBjJ2UwwX_jGfMCS16-ZmtKNJZQe04sDxV4365jF-arTefuqULGONyRR8lBwESaoXWkANfDEHAOYkA4lvSSbJnkN6aDVFp907xc8veH_0OldQkQ27iTspSzEp9XeY9lLB-BUDNGmtKl2HzEaKqlMB4GJihifzTmxbx_CdstUz4nOOsoSeysSFki2a_i0GLEP1AgA3UqjhkAHV8vrb4516lGJar6te8lOVbM5J-rVTeveRWMTMlnC40f_vb1OIDxt-g7Ro3bOnRlD1Wjg11ZZVRXMAkqA9Iu8u0W_4KEus5ocuAcIn1HKf5PnJerwDRNAKGHy7qL0gkwAAAAFhY794AQ")
 ADMIN = int(os.environ.get("ADMIN", 5217294686))
 bot_username = os.environ.get("BOT_USERNAME","PremiumRenameBot")
 log_channel = int(os.environ.get("LOG_CHANNEL", "-1001898316484"))
