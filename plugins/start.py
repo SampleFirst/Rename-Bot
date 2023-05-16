@@ -1,5 +1,6 @@
 from datetime import date as date_
 import datetime
+import pytz
 import os
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 import time
@@ -26,15 +27,18 @@ FLOOD = 500
 LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/4488a1891072c63fed940.jpg")
 
 
-# Part of Day --------------------
-currentTime = datetime.datetime.now()
+# Set the timezone to Indian Standard Time
+ist_tz = pytz.timezone('Asia/Kolkata')
+currentTime = datetime.datetime.now(ist_tz)
 
 if currentTime.hour < 12:
-    wish = "❤️ 𝗚𝗼𝗼𝗱 𝗠𝗼𝗿𝗻𝗶𝗻𝗴 ❤"
-elif 12 <= currentTime.hour < 12:
+    wish = "❤️ 𝗚𝗼𝗼𝗱 𝗠𝗼𝗿𝗻𝗶𝗻𝗴 ❤️"
+elif 12 <= currentTime.hour < 16:
     wish = '🤍 𝗚𝗼𝗼𝗱 𝗔𝗳𝘁𝗲𝗿𝗻𝗼𝗼𝗻 🤍'
 else:
     wish = '💙 𝗚𝗼𝗼𝗱 𝗘𝘃𝗲𝗻𝗶𝗻𝗴 💙'
+
+print(wish)
 
 # -------------------------------
 
